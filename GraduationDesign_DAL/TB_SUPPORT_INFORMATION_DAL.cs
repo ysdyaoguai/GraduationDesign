@@ -50,7 +50,7 @@ namespace GraduationDesign_DAL
                 new SqlParameter("@subject_id", SqlDbType.NVarChar, 4),
                 new SqlParameter("@support_point", SqlDbType.NVarChar, 8),
                 new SqlParameter("@support_power_inside", SqlDbType.NVarChar, 8),
-                new SqlParameter("@edu_activity", SqlDbType.NVarChar, 10),
+                new SqlParameter("@edu_activity", SqlDbType.NVarChar, 50),
             };
 
             pars[0].Value = tb_support_information.id;
@@ -106,7 +106,7 @@ namespace GraduationDesign_DAL
                 new SqlParameter("@subject_id", SqlDbType.NVarChar, 4),
                 new SqlParameter("@support_point", SqlDbType.NVarChar, 8),
                 new SqlParameter("@support_power_inside", SqlDbType.NVarChar, 8),
-                new SqlParameter("@edu_activity", SqlDbType.NVarChar, 10),
+                new SqlParameter("@edu_activity", SqlDbType.NVarChar, 50),
                 new SqlParameter("@id", SqlDbType.NVarChar, 4),
                                  };
 

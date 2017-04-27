@@ -80,6 +80,23 @@
 
                     $("#tableList tbody").html("");
                     loadTbUserList();
+
+
+                    $.messager.show(
+                        {
+                            title: '添加提示',
+                            msg: '添加成功',
+                            showType: 'show',
+                            style: {
+                                right: '',
+                                bottom: ''
+                            }
+                        }
+                    );
+
+
+
+
                 }
                 else
                 {
@@ -112,7 +129,7 @@
                 blindDetailClickEvent();
                 blindDeleteClickEvent();
                 blindEditClickEvent();
-                binndPageBarClickEvent();//分页的超链接加上单击事件
+                blindPageBarClickEvent();//分页的超链接加上单击事件
 
 
 
@@ -124,7 +141,7 @@
 
 
         //分页的超链接加上单击事件
-        function binndPageBarClickEvent()
+        function blindPageBarClickEvent()
         {
             $(".myPageBar").click(function () {
                 var pageIndex = $(this).attr("href").split('=')[1];
@@ -284,6 +301,27 @@
                             if (data == "y") {
                                 $("#tableList tbody").html("");
                                 loadTbUserList();
+
+
+
+
+                                $.messager.show(
+                                    {
+                                        title: '删除提示',
+                                        msg: '删除成功',
+                                        showType: 'show',
+                                        style: {
+                                            right: '',
+                                            bottom: ''
+                                        }
+                                    }
+                                );
+
+
+
+
+
+
                             }
                             else
                             {

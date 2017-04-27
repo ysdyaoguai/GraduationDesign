@@ -47,8 +47,8 @@ namespace GraduationDesign_DAL
             string sql = "insert into TB_STUDENT_DETAIL (student_id, student_name, student_sex) values (@student_id, @student_name, @student_sex)";
             SqlParameter[] pars = {
                 new SqlParameter("@student_id", SqlDbType.NVarChar, 4),
-                new SqlParameter("@student_name", SqlDbType.NVarChar, 10),
-                new SqlParameter("@student_sex", SqlDbType.NVarChar, 10),
+                new SqlParameter("@student_name", SqlDbType.NVarChar, 50),
+                new SqlParameter("@student_sex", SqlDbType.NVarChar, 50),
             };
 
             pars[0].Value = tb_student_detail.student_id;
@@ -64,10 +64,10 @@ namespace GraduationDesign_DAL
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        public int DeleteTbStudentDetailModel(int id)
+        public int DeleteTbStudentDetailModel(int student_id)
         {
-            string sql = "delete from TB_STUDENT_DETAIL where id=@id";
-            return SqlHelper.ExecuteNonQuery(sql, CommandType.Text, new SqlParameter("@id", id));
+            string sql = "delete from TB_STUDENT_DETAIL where student_id=@student_id";
+            return SqlHelper.ExecuteNonQuery(sql, CommandType.Text, new SqlParameter("@student_id", student_id));
         }
 
 
@@ -80,10 +80,10 @@ namespace GraduationDesign_DAL
         /// <returns></returns>
         public int EditTbStudentDetailModel(TB_STUDENT_DETAIL tb_student_detail)
         {
-            string sql = "update TB_STUDENT_DETAIL_DAL set student_name=@student_name,student_sex=@student_sex where student_id=@student_id";
+            string sql = "update TB_STUDENT_DETAIL set student_name=@student_name,student_sex=@student_sex where student_id=@student_id";
             SqlParameter[] pars = {
-                new SqlParameter("@student_name", SqlDbType.NVarChar, 10),
-                new SqlParameter("@student_sex", SqlDbType.NVarChar, 10),
+                new SqlParameter("@student_name", SqlDbType.NVarChar, 50),
+                new SqlParameter("@student_sex", SqlDbType.NVarChar, 50),
                 new SqlParameter("@student_id", SqlDbType.NVarChar, 4),
                                  };
 

@@ -443,12 +443,18 @@
     <Content Include="Home.ashx" />
     <Content Include="SignUp.ashx" />
     <Content Include="Login.ashx" />
+    <Content Include="StudentDetail\StudentDetail.aspx" />
     <Content Include="TB_USER_LIST.ashx" />
     <Content Include="css\themes\material\images\Thumbs.db" />
     <Content Include="ShowTbUserDetail.ashx" />
     <Content Include="DeleteTbUser.ashx" />
     <Content Include="AddTbUser.ashx" />
     <Content Include="EditTbUser.ashx" />
+    <Content Include="StudentDetail\StudentDetail.ashx" />
+    <Content Include="StudentDetail\ShowStudentDetail.ashx" />
+    <Content Include="StudentDetail\EditStudentDetail.ashx" />
+    <Content Include="StudentDetail\DeleteStudentDetail.ashx" />
+    <Content Include="StudentDetail\AddStudentDetail.ashx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -514,6 +520,28 @@
     <Compile Include="SignUp.aspx.designer.cs">
       <DependentUpon>SignUp.aspx</DependentUpon>
     </Compile>
+    <Compile Include="StudentDetail\AddStudentDetail.ashx.cs">
+      <DependentUpon>AddStudentDetail.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentDetail\DeleteStudentDetail.ashx.cs">
+      <DependentUpon>DeleteStudentDetail.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentDetail\EditStudentDetail.ashx.cs">
+      <DependentUpon>EditStudentDetail.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentDetail\ShowStudentDetail.ashx.cs">
+      <DependentUpon>ShowStudentDetail.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentDetail\StudentDetail.ashx.cs">
+      <DependentUpon>StudentDetail.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentDetail\StudentDetail.aspx.cs">
+      <DependentUpon>StudentDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentDetail\StudentDetail.aspx.designer.cs">
+      <DependentUpon>StudentDetail.aspx</DependentUpon>
+    </Compile>
     <Compile Include="TB_USER_LIST.ashx.cs">
       <DependentUpon>TB_USER_LIST.ashx</DependentUpon>
     </Compile>
@@ -550,6 +578,7 @@
       <Name>GraduationDesign_Model</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

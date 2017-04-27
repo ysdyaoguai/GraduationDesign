@@ -45,8 +45,8 @@ namespace GraduationDesign_DAL
             string sql = "insert into TB_USER (user_id, user_name, user_type, user_pwd, user_reg_time) values (@user_id, @user_name, @user_type, @user_pwd, @user_reg_time)";
             SqlParameter[] pars = {
                 new SqlParameter("@user_id", SqlDbType.NVarChar, 4),
-                new SqlParameter("@user_name", SqlDbType.NVarChar, 10),
-                new SqlParameter("@user_type", SqlDbType.NVarChar, 10),
+                new SqlParameter("@user_name", SqlDbType.NVarChar, 50),
+                new SqlParameter("@user_type", SqlDbType.NVarChar, 50),
                 new SqlParameter("@user_pwd", SqlDbType.NVarChar, 50),
                 new SqlParameter("@user_reg_time", SqlDbType.NVarChar, 32),
             };
@@ -118,8 +118,8 @@ namespace GraduationDesign_DAL
         {
             string sql = "update TB_USER set user_name=@user_name,user_type=@user_type,user_pwd=@user_pwd,user_reg_time=@user_reg_time where user_id=@user_id";
             SqlParameter[] pars = {
-                new SqlParameter("@user_name", SqlDbType.NVarChar, 10),
-                new SqlParameter("@user_type", SqlDbType.NVarChar, 10),
+                new SqlParameter("@user_name", SqlDbType.NVarChar, 50),
+                new SqlParameter("@user_type", SqlDbType.NVarChar, 50),
                 new SqlParameter("@user_pwd", SqlDbType.NVarChar, 50),
                 new SqlParameter("@user_reg_time", SqlDbType.NVarChar, 32),
                 new SqlParameter("@user_id", SqlDbType.NVarChar, 4),

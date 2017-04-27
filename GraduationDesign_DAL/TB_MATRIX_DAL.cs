@@ -48,8 +48,8 @@ namespace GraduationDesign_DAL
                 new SqlParameter("@subject_id", SqlDbType.NVarChar, 4),
                 new SqlParameter("@graduation_require_num", SqlDbType.NVarChar, 4),
                 new SqlParameter("@graduation_require_num_detail", SqlDbType.NVarChar, 8),
-                new SqlParameter("@model", SqlDbType.NVarChar, 10),
-                new SqlParameter("@model_detail", SqlDbType.NVarChar, 10),
+                new SqlParameter("@model", SqlDbType.NVarChar, 50),
+                new SqlParameter("@model_detail", SqlDbType.NVarChar, 50),
                 new SqlParameter("@support_power", SqlDbType.NVarChar, 8),
             };
 
@@ -106,8 +106,8 @@ namespace GraduationDesign_DAL
             SqlParameter[] pars = {
                 new SqlParameter("@graduation_require_num", SqlDbType.NVarChar, 4),
                 new SqlParameter("@graduation_require_num_detail", SqlDbType.NVarChar, 8),
-                new SqlParameter("@model", SqlDbType.NVarChar, 10),
-                new SqlParameter("@model_detail", SqlDbType.NVarChar, 10),
+                new SqlParameter("@model", SqlDbType.NVarChar, 50),
+                new SqlParameter("@model_detail", SqlDbType.NVarChar, 50),
                 new SqlParameter("@support_power", SqlDbType.NVarChar, 8),
                 new SqlParameter("@subject_id", SqlDbType.NVarChar, 4),
                                  };

@@ -47,7 +47,7 @@ namespace GraduationDesign_DAL
             string sql = "insert into TB_SUBJECT (subject_id, subject_name) values (@subject_id, @subject_name)";
             SqlParameter[] pars = {
                 new SqlParameter("@subject_id", SqlDbType.NVarChar, 4),
-                new SqlParameter("@subject_name", SqlDbType.NVarChar, 10),
+                new SqlParameter("@subject_name", SqlDbType.NVarChar, 50),
             };
 
             pars[0].Value = tb_subject.subject_id;
@@ -115,7 +115,7 @@ namespace GraduationDesign_DAL
         {
             string sql = "update TB_SUBJECT set subject_name=@subject_name where subject_id=@subject_id";
             SqlParameter[] pars = {
-                new SqlParameter("@subject_name", SqlDbType.NVarChar, 10),
+                new SqlParameter("@subject_name", SqlDbType.NVarChar, 50),
                 new SqlParameter("@subject_id", SqlDbType.NVarChar, 4),
                                  };
 
